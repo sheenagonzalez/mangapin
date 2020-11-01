@@ -1,62 +1,68 @@
 <template>
   <div>
+    <AppHeader/>
     <Nuxt />
   </div>
 </template>
 
+<script>
+import AppHeader from "../components/AppHeader";
+export default {
+  components: {
+    AppHeader
+  }
+}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+/* Variables */
+:root {
+    --color1: #FDE74C;
+    --color2: #29535C;
+    --main-color: #000;
+    --bg-color: #fff;
+    --brand: 48px 'Rubik Mono One', sans-serif;
+    --manga-title: bold 36px 'Rubik', sans-serif;
+    --headline: 24px 'Rubik Mono One', sans-serif;
+    --subheadline: 18px 'Rubik', sans-serif;
+    --body: 14px 'Rubik', sans-serif;
+}
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  font: var(--body);
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.brand {
+  font: var(--brand);
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.manga-title {
+  font: var(--manga-title);
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.headline {
+  font: var(--headline);
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.subheadline {
+  font: var(--subheadline);
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.bold {
+  font-weight: bold;
+}
+@media screen and (min-width: 801px) {
+  /* Desktop */
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* Tablets */
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* Mobiles */
+  html {
+    font-size: 12px;
+  }
 }
 </style>
