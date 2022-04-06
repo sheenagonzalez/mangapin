@@ -1,4 +1,5 @@
 # mangapin
+Mangapin is a personal library of manga recommendations designed and built by Sheena Gonzalez, as a coding practice to learn Vue. This is a quick mini project where I focused more on functionality, the rest of the features are left unfinished.
 
 ## Build Setup
 
