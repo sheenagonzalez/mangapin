@@ -14,13 +14,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.13.3"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^5.0.2",
     "push-dir": "^0.4.1"
   }
 }
